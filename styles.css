@@ -29,6 +29,13 @@ h1 {
     font-weight: bold;
 }
 
+/* Style for the small text below the heading */
+#username {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
 /* Style for the "Change Language" button at the bottom */
 .language-change {
     position: absolute;
