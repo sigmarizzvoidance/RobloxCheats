@@ -1,30 +1,50 @@
-/* Apply base styles */
+/* Reset default margins and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set the dark background with gradient */
+/* Apply a dark background with a white gradient at the top */
 body {
-    font-family: 'Gotham', sans-serif;
-    background: linear-gradient(to bottom, #2b2b2b, #3e1f3d);
     height: 100vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 1));
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-/* Center the content */
-.content {
+    align-items: flex-start; /* Align to the top */
+    font-family: Arial, sans-serif;
+    color: white;
     text-align: center;
 }
 
-/* Style the header text */
+/* Centering the text container */
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the header text */
 h1 {
-    font-size: 4em; /* Large text */
-    color: white;   /* White text */
-    font-weight: bold;  /* Bold text */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Text shadow */
-    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Style for the "Change Language" button at the bottom */
+.language-change {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.language-change p {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: none; /* Prevent text selection */
+}
+
+.language-change p:hover {
+    color: #ddd;
 }
